@@ -1,0 +1,77 @@
+body {
+    background-color: #111;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    color: #ff0;
+    text-shadow: 0 0 10px #ff0;
+}
+
+#gameCanvas {
+    background-color: #000;
+    border: 5px solid #0f0;
+    box-shadow: 0 0 20px #0f0;
+    margin-top: 10px;
+}
+
+#gameOptions, #gameOverScreen {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 50, 0, 0.7);
+    border-radius: 10px;
+    border: 2px solid #0f0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00aa00;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    padding: 10px 0;
+    font-size: 1.1em;
+    background-color: #000;
+    border: 2px solid #0f0;
+    margin-bottom: 5px;
+}
+
+#scoreboard p span {
+    font-weight: bold;
+    color: #ff0;
+}
+
+#gameOverScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+#gameOverText {
+    color: #f00;
+    text-shadow: 0 0 10px #f00;
+}

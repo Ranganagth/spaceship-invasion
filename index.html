@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaceship Invasion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameOptions">
+        <h1>Spaceship Invasion</h1>
+        <button id="startButton">Start Game</button>
+    </div>
+
+    <div id="gameContainer" style="display: none;">
+        <div id="scoreboard">
+            <p>Score: <span id="currentScore">0</span></p>
+            <p>Highest Score: <span id="highestScore">0</span></p>
+            <p>Time Remaining: <span id="remainingTime">120</span>s</p>
+        </div>
+
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+
+    <div id="gameOverScreen" style="display: none;">
+        <h2 id="gameOverText">GAME OVER!</h2>
+        <p>Highest Score: <span id="finalHighestScoreValue">0</span></p>
+        <button onclick="window.location.reload()">Play Again</button>
+    </div>
+    
+    <audio id="hitSound" src="hit.mp3"></audio> 
+    <audio id="groundSound" src="miss.mp3"></audio> 
+
+    <script src="script.js"></script>
+</body>
+</html>
